@@ -2025,6 +2025,7 @@ def player_spawn(event):
 
     wcsplayer = WCSPlayer.from_userid(userid)
     wcsplayer.data.pop('longjump', None)
+    wcsplayer.data.pop('noflash', None)
 
 
 @Event('player_death')
